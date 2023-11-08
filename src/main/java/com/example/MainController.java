@@ -118,5 +118,12 @@ public class MainController {
 		return mav;
 	}
 	
+	@GetMapping("/")
+	public ModelAndView displayMainScreen() {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("index");
+		return mav;
+	}
+	
 
 }
