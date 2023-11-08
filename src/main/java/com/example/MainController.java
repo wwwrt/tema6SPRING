@@ -105,14 +105,14 @@ public class MainController {
 		mav.addObject("rezultat", sumaConvertita);
 		mav.addObject("sumaInitialaInRon", ron);
 		
-		mav.setViewName("ConverterValutarInputPage");
+		mav.setViewName("ConvertInputDisplay");
 		
 		return mav;
 	}
 		
 		
 	@GetMapping ("/convertInput")
-	public ModelAndView displayConverInput () {
+	public ModelAndView displayConvertInput () {
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("ConverterValutarInputPage");
 		return mav;
